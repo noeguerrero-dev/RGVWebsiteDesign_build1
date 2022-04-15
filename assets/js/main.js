@@ -4,7 +4,7 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 (function($) {
-
+	 
 	var	$window = $(window),
 		$banner = $('#banner'),
 		$body = $('body');
@@ -41,5 +41,35 @@
 				resetForms: true,
 				side: 'right'
 			});
+	
+  /**
+   * Testimonials slider
+   */ 
+   var swiper = new Swiper('.testimonials-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
 
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      }
+    }
+  }); 
+  
 })(jQuery);
+

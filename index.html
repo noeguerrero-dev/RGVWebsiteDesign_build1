@@ -2,16 +2,31 @@
 <!--
 rgvwebsitedesign.com created and built
 -->
-<html>
+<html lang="en">
 
 <head>
 	<title>RGV Web Design</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="shortcut icon" href="images\favicon.ico">
+
+	<!-- Template Main CSS File -->
+	<link rel="stylesheet" href="assets/css/main.css" /> 
+
+	<!-- Favicon -->
+	<link href="images/icon.png" rel="icon">
+
+	<!-- Vendor CSS Files -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> 
+	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+	<!-- Swiper bundle -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/> 
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body class="is-preload">
@@ -44,7 +59,7 @@ rgvwebsitedesign.com created and built
 		<video autoplay loop muted playsinline src="images/banner.mp4"></video>
 	</section>
 
-	<hr>
+	<hr> 
 	<!-- Highlights -->
 	<section class="wrapper">
 		<div class="inner">
@@ -118,64 +133,141 @@ rgvwebsitedesign.com created and built
 		</div>
 	</section>
 
-	<!-- Testimonials -->
-	<section class="wrapper">
-		<div class="inner">
+	<section id="testimonials" class="testimonials">
+		<div class="container">
 			<header class="special">
+				<br><br>
 				<h2>Testimonials</h2>
-				<p>Still don't trust us? Then hear it from several previous clients who worked with us. </p>
-			</header>
-			<div class="testimonials">
-				<section>
-					<div class="content">
-						<blockquote>
-							<p>Quality work from a local business here in the RGV. Will recommend.</p>
-						</blockquote>
-						<div class="author">
-							<div class="image">
-								<img src="images\user-icon.png" alt="" />
-							</div>
-							<p class="credit">- <strong>Chris</strong> <span>JCP Quality Maintenance, Houston TX</span></p>
-						</div>
+				<p>Still don't trust us? Then hear it from several previous clients who worked with us.</p>
+			</header> 
+  
+		  <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+			<div class="swiper-wrapper">
+  
+			  	<div class="swiper-slide">
+					<div class="testimonial-item">
+					<p>
+						<i class="bx bxs-quote-alt-left quote-icon-left"></i>
+						Quality work from a local business here in the RGV. Will recommend.
+						<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+					</p>
+					<img src="images/testimonials-5.jpg" class="testimonial-img" alt="">
+					<h3>Chris</h3>
+					<h4>JCP Quality Maintanence</h4>
+					<h4>Houston, TX</h4>
 					</div>
-				</section>
-				<section>
-					<div class="content">
-						<blockquote>
-							<p>Needed a simple website for my small business. Great price, great quality.</p>
-						</blockquote>
-						<div class="author">
-							<div class="image">
-								<img src="images\user-icon.png" alt="" />
-							</div>
-							<p class="credit">- <strong>Eva</strong> <span>Machine Baseball Ranch, Brownsville TX</span></p>
-						</div>
+			  	</div><!-- End testimonial item --> 
+    
+				<div class="swiper-slide">
+					<div class="testimonial-item">
+					<p>
+						<i class="bx bxs-quote-alt-left quote-icon-left"></i>
+						Needed a simple website for my small business. Great price, great quality.
+						<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+					</p>
+					<img src="images/testimonials-2.jpg" class="testimonial-img" alt="">
+					<h3>Eva</h3>
+					<h4>Machine Baseball Ranch</h4>
+					<h4>Brownsville, TX</h4>
 					</div>
-				</section>
-				<section>
-					<div class="content">
-						<blockquote>
-							<p>Guided us with marketing our new application. </p>
-						</blockquote>
-						<div class="author">
-							<div class="image">
-								<img src="images\user-icon.png" alt="" />
-							</div>
-							<p class="credit">- <strong>Noah</strong> <span>Black Jack Buddy App, Edinburg TX</span></p>
-						</div>
+			  	</div><!-- End testimonial item --> 
+ 
+				<div class="swiper-slide">
+					<div class="testimonial-item">
+					<p>
+						<i class="bx bxs-quote-alt-left quote-icon-left"></i>
+						Guided us with marketing our new application.
+						<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+					</p>
+					<img src="images/testimonials-4.jpg" class="testimonial-img" alt="">
+					<h3>Noah</h3>
+					<h4>Black Jack Buddy App</h4>
+					<h4>Edinburg TX</h4>
 					</div>
-				</section>
+				</div><!-- End testimonial item --> 
+
+				<div class="swiper-slide">
+					<div class="testimonial-item">
+					<p>
+						<i class="bx bxs-quote-alt-left quote-icon-left"></i>
+						Awesome company helped me with my business' website!
+						<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+					</p>
+					<img src="images/testimonials-6.jpg" class="testimonial-img" alt="">
+					<h3>Amy</h3>
+					<h4>Moody App</h4>
+					<h4>Pharr, TX</h4>
+					</div>
+				</div><!-- End testimonial item --> 
+				
+				<div class="swiper-slide">
+					<div class="testimonial-item">
+					<p>
+						<i class="bx bxs-quote-alt-left quote-icon-left"></i>
+						RGV Website design created a stunning website for me
+						<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+					</p>
+					<img src="images/testimonials-7.jpg" class="testimonial-img" alt="">
+					<h3>Jose</h3>
+					<h4>Airsoft Team</h4>
+					<h4>San Marcos, TX</h4>
+					</div>
+				</div><!-- End testimonial item --> 
+
+				<div class="swiper-slide">
+					<div class="testimonial-item">
+					<p>
+						<i class="bx bxs-quote-alt-left quote-icon-left"></i>
+						I needed a website quick and cheap
+						<i class="bx bxs-quote-alt-right quote-icon-right"></i>
+					</p>
+					<img src="images/testimonials-3.jpg" class="testimonial-img" alt="">
+					<h3>Mark</h3>
+					<h4>HTV Plus</h4>
+					<h4>McAllen, TX</h4>
+					</div>
+				</div><!-- End testimonial item --> 
 			</div>
+			<div class="swiper-pagination"></div>
+		  </div><br><br>
+  
 		</div>
-	</section>
+
+	  </section>
+
+	  <section id="clients" class="clients section-bg">
+		<div class="container">  
+			<br><br>
+				<h2>Partners</h2>
+				<p>Previous partner companies we've worked with</p>
+		  	<div class="row"> 
+				<div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+					<img src="images/MBR.png" class="img-fluid" alt="" >
+				</div>
+	
+				<div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+					<img src="images/BJB.png" class="img-fluid" alt="" >
+				</div>
+	
+				<div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+					<img src="images/meet_logo.png" class="img-fluid" alt="" >
+				</div>    
+
+				<div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+					<img src="images/moody.png" class="img-fluid" alt="" >
+				</div>    
+		  	</div>  
+			  <br><br>
+		</div>
+	  </section>
 
 	<!-- Footer -->
 	<footer id="footer">
 		<div class="inner">
 			<div class="content">
 				<section>
-					<h3>RGV Website Design</h3>
-					<p><img src="images\placeholderimageblacklogo.png" alt="logo" width="35%"></p>
+					<h3>RGV Website Design</h3><br>
+					<p><img src="images\icon.png" alt="logo" width="35%"></p>
 				</section>
 				<section>
 					<h4>INFO</h4>
@@ -194,12 +286,13 @@ rgvwebsitedesign.com created and built
 				<section>
 					<h4>Social</h4>
 					<ul class="plain">
-						<!--	<li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li> -->
-						<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
-						<!--	<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li> -->
+						<li><a href="https://twitter.com/rgvwebdesign"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+						<li><a href="https://www.facebook.com/rgvwebsitedesign"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+						<li><a href="https://www.instagram.com/rgvwebdesign/"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
 					</ul>
 				</section>
-			</div>
+			</div> 
+			<br>
 			<div class="copyright">
 				<p>Website built with <em>RGV Website Design</em><br></p>
 				&copy;<a href="https://unsplash.co"></a>RGV Website Design<a href="https://coverr.co"></a>
@@ -214,6 +307,13 @@ rgvwebsitedesign.com created and built
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 
+	<!-- Vendor-->
+	<script src="assets/vendor/purecounter/purecounter.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+	<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+	<script src="assets/vendor/php-email-form/validate.js"></script>
 </body>
 
 </html>
